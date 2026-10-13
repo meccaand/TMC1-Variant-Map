@@ -88,8 +88,7 @@ pathogenic vs all other missense, medians, 20,000-shuffle permutation test:
 **Structural detail worth knowing:** UniProt annotates TM1, TM4 and TM6 as continuous helices. In the cryo-EM
 structure each is two helices with a short break, at 207–210, 418–419 and 541–543
 ([`data/tmc1_topology_comparison.csv`](data/tmc1_topology_comparison.csv)). The TM4 break falls at M418, a residue
-with pathogenic variants (M418K, M418T). **TODO (verify):** human M418 should align with M412 in the *Beethoven*
-mouse (Tmc1 p.M412K).
+with pathogenic variants (M418K, M418T). Human M418 is the ortholog of M412 in the *Beethoven* mouse (Tmc1 p.M412K). The surrounding sequence is identical (VMSLLGMFCPTLFDL), and human p.M418K causes dominant DFNA36 hearing loss ([Zhao et al., 2014, *PLoS One*](https://pmc.ncbi.nlm.nih.gov/articles/PMC4020765)).
 
 ## Where I had to step in
 
@@ -138,8 +137,6 @@ the execution record. They were judgment calls about data and method: which tran
 mean or a median is the honest summary, and what counts as the pore. The two kinds of checking turned out to be
 complementary. The reviewer catches the narrative drifting away from what actually ran. Domain review catches
 analyses that ran exactly as written and were still wrong.
-
-**TODO (Andrew):** add any other reviewer cards from the session.
 
 ## Reproducibility
 
