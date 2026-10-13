@@ -1,0 +1,7 @@
+tm_definition,comparison,in_TM_group1,in_TM_group2,odds_ratio,p_fisher
+UniProt TM ranges,P/LP vs all non-P/LP,25/48,99/271,1.89,0.0534
+UniProt TM ranges,P/LP vs B/LB,25/48,0/4,inf,0.1116
+UniProt TM ranges,recessive P/LP vs all non-P/LP,16/26,99/271,2.78,0.019
+cryo-EM helix boundaries (7USW-mapped),P/LP vs all non-P/LP,23/48,91/271,1.82,0.0717
+cryo-EM helix boundaries (7USW-mapped),P/LP vs B/LB,23/48,0/4,inf,0.1204
+cryo-EM helix boundaries (7USW-mapped),recessive P/LP vs all non-P/LP,17/26,91/271,3.74,0.0022
