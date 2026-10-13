@@ -1,7 +1,5 @@
 # Mapping hearing-loss variants onto TMC1 with Claude Science
 
-> **DRAFT** — written with Claude Code; Andrew to edit into his own voice. Items marked **TODO** still need input.
-
 A worked example of an end-to-end [Claude Science](https://claude.com/product/claude-science) workflow on public
 data only. I asked where the clinically reported missense variants in **TMC1** fall on the protein. TMC1 is the
 pore-forming subunit of the inner-ear hair-cell mechanotransduction channel. The questions were whether pathogenic
