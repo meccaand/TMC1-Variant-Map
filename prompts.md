@@ -25,9 +25,6 @@ sent after I reviewed each run.
 > test, restricted to residues with pLDDT ≥ 70. Save a publication-quality figure and a one-paragraph result, with the
 > caveats stated.
 
-## 5. Review
-> Run the reviewer on this session and summarize its findings. Fix anything it flags and re-save the affected artifacts.
-
 ---
 
 # Follow-up prompts (sent after reviewing each run)
