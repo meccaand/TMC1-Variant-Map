@@ -70,7 +70,8 @@ Prompts are in [`prompts.md`](prompts.md). Over one session:
 The 9 variants with any dominant (DFNA36) assertion show no helix preference (4/9 under UniProt ranges, p = 0.73).
 One observation, n = 3, not a finding: each dominant-only variant sits just outside the cryo-EM helices.
 M418K is in the TM4 break (418–419), D543N in the TM6 break (541–543), and D572N one residue before TM7.
-UniProt's continuous helices count the first two as in-helix. **TODO (Andrew):** is this biologically plausible?
+UniProt's continuous helices count the first two as in-helix. Flagged for follow-up only; three variants can't
+support a claim about helix kinks.
 
 **Distance to the pore** ([`data/tmc1_pore_distance_sensitivity.csv`](data/tmc1_pore_distance_sensitivity.csv)),
 pathogenic vs all other missense, medians, 20,000-shuffle permutation test:
@@ -175,9 +176,11 @@ figures/     final figures
 notebooks/   end-to-end reproduction notebook (executed)
 history/     outputs from runs 1-2, before corrections
 prompts.md   the prompts used in Claude Science
+LICENSE      MIT (code and text)
 ```
 
 ## Data licenses
 
 UniProt (CC BY 4.0), AlphaFold DB (CC BY 4.0), ClinVar (public domain), gnomAD (ODbL), RCSB PDB (CC0),
-Ensembl (no restrictions). Analysis code and text in this repo: MIT. **TODO:** confirm the license choice.
+Ensembl (no restrictions). Code and text in this repo are [MIT](LICENSE). The tables in `data/` derive from the
+sources above and keep their terms; the gnomAD allele-count fields fall under ODbL.
