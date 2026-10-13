@@ -4,7 +4,7 @@ TM2,272-303,273-302,273-299,agrees
 TM3,360-390,357-395,359-389,agrees
 TM4,403-430,407-417 + 420-431,407-417 + 420-431,broken: 2-residue break at 418-419 in both structures; UniProt calls one continuous helix and starts 4 aa early
 TM5,435-469,434-493,435-472,cryo-EM supports UniProt (ends 472); AF extends the helix 21 aa further into the extracellular loop
-TM6,516-553,516-540 + 544-553,516-540 + 544-552,broken: 541-543 break in both structures; UniProt end (553) matches the second piece
+TM6,516-553,516-540 + 544-553,516-540 + 544-552,broken: 541-543 break in both structures; UniProt end (553) matches the AF second piece (544-553) but is one residue past the cryo-EM one (544-552)
 TM7,573-593,573-590,573-589,agrees (3-4 aa shorter at the C-end)
 TM8,597-619,596-617,596-617,agrees
 TM9,634-657,632-655,634-656,agrees

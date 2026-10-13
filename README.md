@@ -115,10 +115,16 @@ and it wrote "not significant" into the figure title itself.
 Claude Science's background reviewer re-reads each response against the execution record. By design it checks
 whether claims match what ran, not whether the method was the right choice.
 
-It caught one real problem. In the exported notebook, a markdown cell said "four rows disagree, including two 3′UTR
-positions", while the executed output directly below listed nine, five of them 3′UTR. That is exactly the kind of
-error it's built for, a stated claim that contradicts the record, and an easy one for a human reader to skim past.
-I corrected the sentence by hand in the published notebook; no code or outputs changed.
+It caught two real problems, both small and both easy for a human reader to skim past:
+
+1. **Notebook narration vs output.** A markdown cell said "four rows disagree, including two 3′UTR positions", while
+   the executed output directly below listed nine, five of them 3′UTR.
+2. **An off-by-one in the topology verdict.** The table said UniProt's TM6 end (553) "matches the second piece" of
+   the cryo-EM helix, but the same row gives that piece as 544–552. The claim was right for the AlphaFold model
+   (544–553) and wrong by one residue for the cryo-EM structure. Claude repeated the claim in its chat summary too.
+
+Both are exactly what the reviewer is built for: a stated claim that contradicts the record. I corrected both by
+hand in the published files (the notebook sentence and the CSV verdict text); no code or numbers changed.
 
 It did not flag the three issues above, and by its own design it shouldn't. Those weren't claims that contradicted
 the execution record. They were judgment calls about data and method: which transcript defines "missense", whether a
@@ -126,7 +132,7 @@ mean or a median is the honest summary, and what counts as the pore. The two kin
 complementary. The reviewer catches the narrative drifting away from what actually ran. Domain review catches
 analyses that ran exactly as written and were still wrong.
 
-**TODO (Andrew):** confirm whether earlier parts of the session had any reviewer cards.
+**TODO (Andrew):** add any other reviewer cards from the session.
 
 ## Reproducibility
 
