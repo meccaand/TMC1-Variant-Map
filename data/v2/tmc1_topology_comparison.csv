@@ -1,0 +1,11 @@
+TM,uniprot,af_model_helix,cryoEM_helix_mapped,verdict
+TM1,183-220,183-208,186-206,UniProt C-end ~12 aa too long
+TM2,272-303,273-302,273-299,agrees
+TM3,360-390,357-395,359-389,agrees
+TM4,403-430,407-417 + 420-431,407-417 + 420-431 (Ce 393-403 + 406-417),broken helix: 2-residue break at 418-419 in both structures; UniProt calls one continuous helix
+TM5,435-469,434-493,435-472,cryo-EM supports UniProt end; AF extends helix 24 aa into the extracellular loop
+TM6,516-553,516-540,516-540,UniProt C-end ~13 aa too long
+TM7,573-593,573-590,573-589,agrees (3-4 aa shorter)
+TM8,597-619,596-617,596-617,agrees
+TM9,634-657,632-655,634-656,agrees
+TM10,701-734,700-759,702-736,cryo-EM supports UniProt; AF extends helix 25 aa into the cytoplasmic tail
