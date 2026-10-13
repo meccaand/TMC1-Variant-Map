@@ -34,6 +34,11 @@ TODO: what the background reviewer flagged and what I changed.
 ## Where I had to step in
 TODO: wrong assumptions, domain corrections, dead ends. This section is the most useful part for readers.
 
+- *(draft, run 1)* The first pass said no benign missense variant sits in a TM helix (25/0 vs 23/6, Fisher p = 0.025).
+  Two of the 6 "benign missense" variants are not missense on the MANE transcript: `p.A755A` is synonymous and
+  `p.*761*` is stop-retained. Their `missense_variant` label likely came from another transcript.
+  With the 4 real benign missense variants, the test gives 25/0 vs 23/4, p = 0.11, so the "real signal" does not hold.
+
 ## Limitations
 - ClinVar has ascertainment bias, and benign variants are under-sampled in some domains.
 - Predicted structures are not experimental structures; check pLDDT before reading anything into a region.
