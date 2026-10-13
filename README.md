@@ -115,8 +115,18 @@ and it wrote "not significant" into the figure title itself.
 Claude Science's background reviewer re-reads each response against the execution record. By design it checks
 whether claims match what ran, not whether the method was the right choice.
 
-**TODO:** list its findings from the session, or note that it raised none. Then compare: which of the three issues
-above did it flag on its own?
+It caught one real problem. In the exported notebook, a markdown cell said "four rows disagree, including two 3′UTR
+positions", while the executed output directly below listed nine, five of them 3′UTR. That is exactly the kind of
+error it's built for, a stated claim that contradicts the record, and an easy one for a human reader to skim past.
+I corrected the sentence by hand in the published notebook; no code or outputs changed.
+
+It did not flag the three issues above, and by its own design it shouldn't. Those weren't claims that contradicted
+the execution record. They were judgment calls about data and method: which transcript defines "missense", whether a
+mean or a median is the honest summary, and what counts as the pore. The two kinds of checking turned out to be
+complementary. The reviewer catches the narrative drifting away from what actually ran. Domain review catches
+analyses that ran exactly as written and were still wrong.
+
+**TODO (Andrew):** confirm whether earlier parts of the session had any reviewer cards.
 
 ## Reproducibility
 
