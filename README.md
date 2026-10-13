@@ -126,6 +126,13 @@ It caught two real problems, both small and both easy for a human reader to skim
 Both are exactly what the reviewer is built for: a stated claim that contradicts the record. I corrected both by
 hand in the published files (the notebook sentence and the CSV verdict text); no code or numbers changed.
 
+It also raised one **false positive**, and that one taught me the most. It recounted the non-pathogenic missense
+variants as 276, not 271, and reported that the pooled TM test was really significant (p = 0.037, not 0.053). The
+5 extra variants are the 3′UTR variants that the gnomAD mirror labels missense. They lie outside the coding sequence
+and have no residue, so they can't be in a helix, and counting them inflates the non-TM denominator. The reviewer had
+counted using the mirror's consequence column, the same unreliable labels corrected in the first round. The table was
+right; the finding wasn't. The tool's own checker can also be wrong, so its findings need checking too.
+
 It did not flag the three issues above, and by its own design it shouldn't. Those weren't claims that contradicted
 the execution record. They were judgment calls about data and method: which transcript defines "missense", whether a
 mean or a median is the honest summary, and what counts as the pore. The two kinds of checking turned out to be
