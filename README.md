@@ -1,5 +1,7 @@
 # Mapping hearing-loss variants onto TMC1 with Claude Science
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/meccaand/TMC1-Variant-Map/blob/main/notebooks/tmc1_variant_map_analysis.ipynb)
+
 A worked example of an end-to-end [Claude Science](https://claude.com/product/claude-science) workflow on public
 data only. I asked where the clinically reported missense variants in **TMC1** fall on the protein. TMC1 is the
 pore-forming subunit of the inner-ear hair-cell mechanotransduction channel. The questions were whether pathogenic
@@ -143,6 +145,8 @@ analyses that ran exactly as written and were still wrong.
   public APIs, no Claude Science needed (Python 3.11; numpy, pandas, scipy, matplotlib, biotite). Running it in a
   clean environment reproduced `tmc1_clinvar_variant_map.csv`, `tmc1_tm_enrichment.csv` and
   `tmc1_pore_distance_sensitivity.csv` byte-for-byte. Set `NCBI_EMAIL` to pass a contact email to NCBI.
+- To run it in your browser, use the **Open in Colab** badge at the top. The first cell installs biotite, the only
+  dependency Colab lacks. Outputs are written to the Colab session, not back to this repo.
 - Both ClinVar sources change over time. A later run will shift counts.
 - **About the tool's own export:** Claude Science records provenance for every artifact (code, execution log,
   environment) and can export it as a script or notebook. In this long session, the export for the pore figure came
